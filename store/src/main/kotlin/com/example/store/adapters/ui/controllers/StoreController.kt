@@ -23,6 +23,4 @@ class StoreController(val createStoreOperation: CreateStoreOperation,
 
     @PutMapping("/{storeId}")
     fun update(@PathVariable storeId: String, @RequestBody store: Store) = updateStoreOperation.execute(storeId, store)
-
-
 }
