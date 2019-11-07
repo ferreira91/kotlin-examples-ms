@@ -9,4 +9,6 @@ class GetStoreOperation(val persistence: StorePersistence) {
     fun execute(name: String?, address: String?): List<Store> {
         return persistence.get(name, address)
     }
+
+    fun exist(id: String): Boolean = persistence.exist(id)
 }

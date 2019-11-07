@@ -30,4 +30,11 @@ class StorePersistence(val repository: StoreRepository) {
 
         return repository.update(query, update)
     }
+
+    fun exist(id: String): Boolean {
+        val query = Query()
+        query.addCriteria(Criteria.where("id").`is`(id))
+
+        return repository.exist(query)
+    }
 }
