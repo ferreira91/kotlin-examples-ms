@@ -18,9 +18,9 @@ class StoreController(val createStoreOperation: CreateStoreOperation,
     @GetMapping
     fun find(@RequestParam name: String?, address: String?) = getStoreOperation.execute(name, address)
 
-    @GetMapping("/{storeId}/exists")
-    fun exist(@PathVariable storeId: String) = getStoreOperation.exist(storeId)
+    @GetMapping("/{id}/exists")
+    fun exist(@PathVariable id: String) = getStoreOperation.exist(id)
 
-    @PutMapping("/{storeId}")
-    fun update(@PathVariable storeId: String, @RequestBody store: Store) = updateStoreOperation.execute(storeId, store)
+    @PutMapping("/{id}")
+    fun update(@PathVariable id: String, @RequestBody store: Store) = updateStoreOperation.execute(id, store)
 }
