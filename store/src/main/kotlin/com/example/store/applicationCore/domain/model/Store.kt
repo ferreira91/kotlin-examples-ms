@@ -1,3 +1,5 @@
 package com.example.store.applicationCore.domain.model
 
-data class Store (val name: String, val address: String)
+import org.springframework.data.annotation.Id
+
+data class Store (@Id val id: String?, val name: String, val address: String)
