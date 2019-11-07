@@ -6,7 +6,7 @@ import org.springframework.stereotype.Service
 
 @Service
 class CreateStoreOperation(val persistence: StorePersistence) {
-    fun execute(store: Store): Any {
+    fun execute(store: Store): Store {
         return persistence.save(store);
     }
 }
