@@ -10,5 +10,5 @@ class GetStoreOperation(val persistence: StorePersistence) {
         return persistence.get(name, address)
     }
 
-    fun exist(id: String): Boolean = persistence.exist(id)
+    fun exists(id: String): Boolean = persistence.exists(id)
 }
