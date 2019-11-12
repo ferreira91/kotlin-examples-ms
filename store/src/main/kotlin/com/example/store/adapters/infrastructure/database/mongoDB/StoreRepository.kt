@@ -1,6 +1,6 @@
 package com.example.store.adapters.infrastructure.database.mongoDB
 
-import com.example.store.applicationCore.domain.model.Store
+import com.example.store.applicationCore.domain.entities.Store
 import org.springframework.data.mongodb.core.FindAndModifyOptions
 import org.springframework.data.mongodb.core.MongoTemplate
 import org.springframework.data.mongodb.core.query.Query

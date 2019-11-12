@@ -1,4 +1,4 @@
-package com.example.store.applicationCore.domain.model
+package com.example.store.applicationCore.domain.entities
 
 import org.springframework.data.annotation.Id
 

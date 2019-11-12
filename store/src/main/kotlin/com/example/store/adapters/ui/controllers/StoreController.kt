@@ -3,7 +3,7 @@ package com.example.store.adapters.ui.controllers
 import com.example.store.applicationCore.application.operation.CreateStoreOperation
 import com.example.store.applicationCore.application.operation.GetStoreOperation
 import com.example.store.applicationCore.application.operation.UpdateStoreOperation
-import com.example.store.applicationCore.domain.model.Store
+import com.example.store.applicationCore.domain.entities.Store
 import org.springframework.web.bind.annotation.*
 
 @RestController
