@@ -5,8 +5,8 @@ import com.example.item.applicationCode.persistence.ItemPersistence
 import org.springframework.stereotype.Service
 
 @Service
-class GetItemOperation(val persistence: ItemPersistence) {
-    fun execute(storeId: String?): List<Item> {
-        return persistence.get(storeId)
+class GetItemByIdOperation(val persistence: ItemPersistence) {
+    fun execute(id: String): Item? {
+        return persistence.getById(id)
     }
 }
