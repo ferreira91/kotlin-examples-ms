@@ -1,7 +1,7 @@
-package com.example.order.applicationCore.domain.model
+package com.example.order.applicationCore.domain.entities
 
 enum class Status(val status: String) {
-    OPEN("OPEN"),
+    CREATED("CREATED"),
     CLOSED("CLOSED"),
     CANCELED("CANCELED")
 }
