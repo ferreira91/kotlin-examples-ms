@@ -1,7 +1,7 @@
 package com.example.item.applicationCode.persistence
 
 import com.example.item.adapters.infrastructure.database.mongodb.ItemRepository
-import com.example.item.applicationCode.domain.model.Item
+import com.example.item.applicationCode.domain.entities.Item
 import org.springframework.data.mongodb.core.query.Criteria
 import org.springframework.data.mongodb.core.query.Query
 import org.springframework.data.mongodb.core.query.Update
@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service
 
 @Service
 class ItemPersistence(val repository: ItemRepository) {
-    fun save(item: Item): Item {
+    fun create(item: Item): Item {
         return repository.save(item)
     }
 

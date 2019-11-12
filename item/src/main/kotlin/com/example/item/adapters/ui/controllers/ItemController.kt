@@ -4,7 +4,7 @@ import com.example.item.applicationCode.application.operation.CreateItemOperatio
 import com.example.item.applicationCode.application.operation.GetItemByIdOperation
 import com.example.item.applicationCode.application.operation.GetItemOperation
 import com.example.item.applicationCode.application.operation.UpdateItemOperation
-import com.example.item.applicationCode.domain.model.Item
+import com.example.item.applicationCode.domain.entities.Item
 import org.springframework.web.bind.annotation.*
 
 @RestController
