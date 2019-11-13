@@ -36,6 +36,4 @@ class ItemPersistence(val repository: ItemRepository) {
 
         return repository.update(query, update)
     }
-
-
 }
