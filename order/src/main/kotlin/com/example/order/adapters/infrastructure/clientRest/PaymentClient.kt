@@ -6,7 +6,7 @@ import org.springframework.stereotype.Service
 import org.springframework.web.client.RestTemplate
 
 @Service
-class PaymentClient(private val template: RestTemplate) {
+class PaymentClient(val template: RestTemplate) {
 
     companion object {
         const val PAYMENT_URL = "http://localhost:8080/api/payment/v1/payments"
