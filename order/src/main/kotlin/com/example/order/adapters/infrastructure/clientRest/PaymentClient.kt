@@ -2,9 +2,10 @@ package com.example.order.adapters.infrastructure.clientRest
 
 import com.example.order.applicationCore.domain.entities.PaymentRequest
 import com.example.order.applicationCore.domain.entities.PaymentResponse
+import org.springframework.stereotype.Service
 import org.springframework.web.client.RestTemplate
 
-
+@Service
 class PaymentClient(private val template: RestTemplate) {
 
     companion object {
@@ -12,5 +13,4 @@ class PaymentClient(private val template: RestTemplate) {
     }
 
     fun post(payment: PaymentRequest) = template.postForEntity(PAYMENT_URL, payment, PaymentResponse::class.java)
-
 }
