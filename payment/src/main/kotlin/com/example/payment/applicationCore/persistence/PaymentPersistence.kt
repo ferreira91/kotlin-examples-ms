@@ -1,6 +1,6 @@
 package com.example.payment.applicationCore.persistence
 
-import com.example.store.adapters.infrastructure.database.mongoDB.PaymentRepository
+import com.example.payment.adapters.infrastructure.database.mongoDB.PaymentRepository
 import com.example.store.applicationCore.domain.entities.Payment
 import org.springframework.data.mongodb.core.query.Criteria
 import org.springframework.data.mongodb.core.query.Query

@@ -1,4 +1,4 @@
-package com.example.store.adapters.infrastructure.database.mongoDB
+package com.example.payment.adapters.infrastructure.database.mongoDB
 
 import com.example.store.applicationCore.domain.entities.Payment
 import org.springframework.data.mongodb.core.FindAndModifyOptions
